@@ -1,0 +1,7 @@
+# Contributing / Katkı
+
+English: Open an issue with the behavior you expected, the actual result, Node/OS/Discord client versions and a synthetic example. Do not include tokens, `.env`, private source text, user IDs or raw API logs. Keep changes focused. Run `npm ci --ignore-scripts`, `npm run check`, `npm audit --audit-level=low`. Add a meaningful regression test when behavior changes. Preserve the consent preview, source-text privacy, permission rechecks, limits and bilingual guidance. Extra permissions, intents, data retention or dependencies need an explained use case and privacy review in the PR. Do not claim live validation unless actually performed. Security issues belong in the private reporting path below.
+
+Türkçe: Beklenen/gerçek davranış, Node/işletim sistemi/Discord sürümü ve yapay bir örnekle issue açın. Token, `.env`, özel kaynak metin, kullanıcı kimlikleri veya ham API logları eklemeyin. Değişikliği dar tutun. `npm ci --ignore-scripts`, `npm run check`, `npm audit --audit-level=low` çalıştırın. Davranış değişirse anlamlı regresyon testi ekleyin. Onaylı önizlemeyi, metin gizliliğini, izin kontrolünü, limitleri ve iki dilli anlatımı koruyun. Ek izin/intent/veri tutma/bağımlılık için PR'da gerekçe ve gizlilik değerlendirmesi gerekir. Yapılmamış canlı testi yapılmış gibi göstermeyin. Güvenlik bildirimleri için özel bildirim yolunu kullanın.
+
+License: Contributions are under the repository's MIT license. Dependency licenses remain applicable.

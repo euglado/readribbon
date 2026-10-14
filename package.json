@@ -1,0 +1,30 @@
+{
+  "name": "readribbon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Private reading-time estimates and consent-based summary sharing in Discord",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "register": "node --env-file-if-exists=.env dist/src/register.js",
+    "start": "node --env-file-if-exists=.env dist/src/main.js",
+    "build": "tsc -p tsconfig.json",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "node --test dist/test/*.test.js",
+    "supply": "node scripts/check-supply.mjs",
+    "check": "npm run lint && npm run build && npm test && npm run supply"
+  },
+  "dependencies": {
+    "discord.js": "14.27.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.15",
+    "@types/node": "24.19.2",
+    "typescript": "7.0.2"
+  }
+}
